@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": "LP001",
+      "name": "Louis Philippe Classic Formal Shirt",
+      "brand": "Louis Philippe",
+      "category": "Shirts",
+      "description": "Premium cotton formal shirt with classic fit. Perfect for boardroom meetings and formal occasions.",
+      "mrp": 2999,
+      "selling_price": 2499,
+      "discount": 17,
+      "colors": ["White", "Light Blue", "Pink"],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "occasion": ["Formal", "Office", "Meeting"],
+      "image": "https://via.placeholder.com/300x400?text=LP+Formal+Shirt"
+    },
+    {
+      "id": "VH001",
+      "name": "Van Heusen Slim Fit Blazer",
+      "brand": "Van Heusen",
+      "category": "Blazers",
+      "description": "Sophisticated slim-fit blazer in premium wool blend. Elevate your style quotient.",
+      "mrp": 6999,
+      "selling_price": 5999,
+      "discount": 15,
+      "colors": ["Navy Blue", "Charcoal", "Black"],
+      "sizes": ["38", "40", "42", "44"],
+      "occasion": ["Formal", "Party", "Wedding"],
+      "image": "https://via.placeholder.com/300x400?text=VH+Blazer"
+    },
+    {
+      "id": "AS001",
+      "name": "Allen Solly Casual Polo T-Shirt",
+      "brand": "Allen Solly",
+      "category": "T-Shirts",
+      "description": "Trendy polo t-shirt for the weekend warrior. Comfortable cotton blend fabric.",
+      "mrp": 1499,
+      "selling_price": 1299,
+      "discount": 13,
+      "colors": ["Red", "Navy", "Green", "Yellow"],
+      "sizes": ["S", "M", "L", "XL"],
+      "occasion": ["Casual", "Weekend", "Brunch"],
+      "image": "https://via.placeholder.com/300x400?text=AS+Polo"
+    },
+    {
+      "id": "PE001",
+      "name": "Peter England Formal Trousers",
+      "brand": "Peter England",
+      "category": "Trousers",
+      "description": "Classic formal trousers with perfect fit. Great value for everyday office wear.",
+      "mrp": 1999,
+      "selling_price": 1799,
+      "discount": 10,
+      "colors": ["Black", "Grey", "Navy", "Beige"],
+      "sizes": ["30", "32", "34", "36", "38"],
+      "occasion": ["Formal", "Office"],
+      "image": "https://via.placeholder.com/300x400?text=PE+Trousers"
+    },
+    {
+      "id": "PAN001",
+      "name": "Pantaloons Festive Kurta Set",
+      "brand": "Pantaloons",
+      "category": "Ethnic",
+      "description": "Elegant kurta with pajama set. Perfect for festivals and family gatherings.",
+      "mrp": 3499,
+      "selling_price": 2999,
+      "discount": 14,
+      "colors": ["Maroon", "Royal Blue", "Cream", "Teal"],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "occasion": ["Festival", "Wedding", "Pooja"],
+      "image": "https://via.placeholder.com/300x400?text=Pan+Kurta"
+    },
+    {
+      "id": "LP002",
+      "name": "Louis Philippe Leather Belt",
+      "brand": "Louis Philippe",
+      "category": "Accessories",
+      "description": "Genuine leather belt with premium buckle. A wardrobe essential.",
+      "mrp": 1999,
+      "selling_price": 1599,
+      "discount": 20,
+      "colors": ["Black", "Brown", "Tan"],
+      "sizes": ["32", "34", "36", "38", "40"],
+      "occasion": ["Formal", "Casual"],
+      "image": "https://via.placeholder.com/300x400?text=LP+Belt"
+    },
+    {
+      "id": "VH002",
+      "name": "Van Heusen Formal Shoes",
+      "brand": "Van Heusen",
+      "category": "Footwear",
+      "description": "Premium leather oxford shoes. Comfort meets elegance.",
+      "mrp": 4999,
+      "selling_price": 3999,
+      "discount": 20,
+      "colors": ["Black", "Brown"],
+      "sizes": ["7", "8", "9", "10", "11"],
+      "occasion": ["Formal", "Office", "Wedding"],
+      "image": "https://via.placeholder.com/300x400?text=VH+Shoes"
+    },
+    {
+      "id": "AS002",
+      "name": "Allen Solly Printed Casual Shirt",
+      "brand": "Allen Solly",
+      "category": "Shirts",
+      "description": "Fun printed shirt for casual Fridays. Stand out from the crowd.",
+      "mrp": 1999,
+      "selling_price": 1599,
+      "discount": 20,
+      "colors": ["Blue Print", "Green Print", "Multi"],
+      "sizes": ["S", "M", "L", "XL"],
+      "occasion": ["Casual", "Party", "Date"],
+      "image": "https://via.placeholder.com/300x400?text=AS+Printed"
+    },
+    {
+      "id": "PE002",
+      "name": "Peter England Checkered Shirt",
+      "brand": "Peter England",
+      "category": "Shirts",
+      "description": "Classic checkered shirt for semi-formal occasions. Versatile and stylish.",
+      "mrp": 1599,
+      "selling_price": 1299,
+      "discount": 19,
+      "colors": ["Blue Check", "Grey Check", "Red Check"],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "occasion": ["Semi-Formal", "Office", "Casual"],
+      "image": "https://via.placeholder.com/300x400?text=PE+Check"
+    },
+    {
+      "id": "PAN002",
+      "name": "Pantaloons Denim Jeans",
+      "brand": "Pantaloons",
+      "category": "Jeans",
+      "description": "Comfortable stretch denim jeans. Perfect everyday wear.",
+      "mrp": 1999,
+      "selling_price": 1499,
+      "discount": 25,
+      "colors": ["Dark Blue", "Light Blue", "Black"],
+      "sizes": ["28", "30", "32", "34", "36"],
+      "occasion": ["Casual", "Weekend"],
+      "image": "https://via.placeholder.com/300x400?text=Pan+Jeans"
+    }
+  ],
+  "offers": [
+    {
+      "code": "FIRST20",
+      "description": "20% off on first purchase",
+      "discount_percent": 20,
+      "min_order": 999
+    },
+    {
+      "code": "FESTIVE15",
+      "description": "15% off on festive collection",
+      "discount_percent": 15,
+      "min_order": 1999
+    },
+    {
+      "code": "BOGO",
+      "description": "Buy 1 Get 1 on Pantaloons",
+      "discount_percent": 50,
+      "brand": "Pantaloons"
+    }
+  ]
+}

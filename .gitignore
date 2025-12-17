@@ -1,0 +1,52 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ChromaDB
+chroma_db/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node (for frontend)
+node_modules/
+.next/
+out/
+.vercel
+
+# Misc
+*.sqlite
+*.db".env" 
+"venv/" 
+"__pycache__/" 
+"*.pyc" 
+"chroma_db/" 
