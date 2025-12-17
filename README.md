@@ -105,6 +105,7 @@ Data & State
   - MongoDB Atlas           → conversation logs, analytics events
   - Groq LLM (llama-3.1-8b-instant) → main language model
 ```
+---
 
 🤖 Agentic Design
 Master Sales Agent
@@ -127,19 +128,21 @@ Soft, human-sounding refusals instead of “cannot comply with that request”
 Handles flirting / emotional manipulation politely but firmly
 Worker agents (Recommendation, Inventory, etc.) are modeled in code and design to be pluggable; current prototype focuses on Recommendation + Context + Pricing behavior to prove the agentic pattern.
 
-🧪 Features
-✅ Web chat SPA built with Next.js 14 + Tailwind
+---
 
+🧪 Features
+
+✅ Web chat SPA built with Next.js 14 + Tailwind
 Typing indicator
 Quick reply chips (“Formal wear”, “Trending”, “Style DNA”)
 Product cards with image, brand, name, price, CTA
 Session info bar (channel, Style DNA flag, etc.)
-✅ WhatsApp integration via Twilio Sandbox
 
+✅ WhatsApp integration via Twilio Sandbox
 Same LLM & brain as web chat
 Full request/response flow verified in logs
-✅ Analytics dashboard (/dashboard)
 
+✅ Analytics dashboard (/dashboard)
 Active users
 Conversations today
 Conversion rate (%)
@@ -148,50 +151,58 @@ Revenue today (₹)
 Satisfaction score (/5)
 Channel mix (WhatsApp, Web, Mobile, Kiosk)
 Agent mesh status (“active” / “degraded”)
+
 ✅ Zero-cost cloud setup
-
 Render (backend), Vercel (frontend), Groq (LLM), Neon PG, MongoDB Atlas, Upstash, Twilio sandbox
-🛠️ Tech Stack
-Backend & Orchestration
 
+---
+
+🛠️ Tech Stack
+
+✅ Backend & Orchestration
 Python 3.11
 FastAPI
 Redis (Upstash)
 Neon PostgreSQL
 MongoDB Atlas (motor)
 Groq Python SDK (LLM)
-AI & Prompting
 
+✅ AI & Prompting
 Groq LLM: llama-3.1-8b-instant
 Carefully designed SYSTEM_PROMPT with:
-Brand positioning
-Pricing & discount constraints
-Behavioral rules (flirting, abuse, bargaining)
-Conversational style guidelines
-Frontend
+    Brand positioning
+    Pricing & discount constraints
+    Behavioral rules (flirting, abuse, bargaining)
+    Conversational style guidelines
 
+✅ Frontend
 Next.js 14 (App Router)
 TypeScript
 Tailwind CSS
 Deployed to Vercel
-Messaging
 
+✅ Messaging
 Twilio WhatsApp Sandbox → FastAPI webhook
-Infra & DevOps
 
+✅ Infra & DevOps
 Render.com Web Service for API
 Vercel for frontend
 Sentry (optional) for error tracking
 GitHub for version control
+
+---
+
 🚀 Running Locally
-Prerequisites
+
+✅ Prerequisites
 Python 3.11
 Node.js 18+
 A Groq API key
 Twilio sandbox credentials (optional, for local WhatsApp testing)
-Backend
-Bash
 
+**Backend**
+
+```
 cd backend
 python -m venv venv
 # Windows
@@ -203,32 +214,43 @@ pip install -r requirements.txt
 
 # create .env based on .env.example and fill secrets
 python -m uvicorn src.main:app --reload --port 8000
+```
+
 The backend will be available at http://localhost:8000
 Docs at: http://localhost:8000/docs
 
-Frontend (web chat + dashboard)
-Bash
+**Frontend (web chat + dashboard)**
 
+```
 cd web-chat
 npm install
 # create .env.local with:
 # NEXT_PUBLIC_API_URL=http://localhost:8000
 npm run dev
-Open:
+```
 
+Open:
 Chat: http://localhost:3000/
 Dashboard: http://localhost:3000/dashboard
+
+---
+
 📈 Limitations & Future Work
+
 Inventory, payment, and fulfilment agents are conceptually modeled but not fully integrated with real ABFRL systems yet.
 Style DNA via selfie color analysis is designed and partially implemented in backend, but UI integration can be deepened.
 WhatsApp is currently through Twilio sandbox, not a production WhatsApp Business number.
 Analytics are partially based on simulated data for the demo; in production this would be backed by event streams.
+
 Future extensions:
 
 Plug in real ABFRL product/inventory APIs
 Build store staff tablet UI that uses same backend
 Full Style DNA flow with image upload + color analysis model
 Use real sales data to train recommendation agent
+
+---
+
 🧑‍💻 Author
 Aryan Ranjan
 B.Tech CSE (E‑Commerce Technologies), VIT Bhopal University
